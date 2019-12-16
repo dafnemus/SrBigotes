@@ -51,7 +51,7 @@ ul {
 .parrafo{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   font-size: 150%;
   text-align: center;
 }
