@@ -18,6 +18,11 @@ margin: 0px;
   margin-top: -50px;
   margin-left: 4px;
 }
+.contenedornav{
+  display: flex;
+    width: 71%;
+    justify-content: flex-end;
+}
 ul { 
     position: fixed;
     list-style-type: none;
@@ -40,8 +45,8 @@ ul {
     background-color: #111;
   }
   .navbar{
-    margin-left: 771px;
-    margin-top: -160px;
+  display: flex;
+  top:0;
   }
   .imgfondo1{
     width: 40%;
