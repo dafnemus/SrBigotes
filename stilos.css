@@ -52,8 +52,18 @@ ul {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: center;
+ 
+
+}
+em{
+  color: rgb(218, 57, 84);
+  font-size: 1.1em;
+}
+.contenidoparrafo{
   font-size: 150%;
   text-align: center;
+
 }
 .imagencomoes{
   width: 30%;
