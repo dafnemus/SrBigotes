@@ -43,11 +43,7 @@ ul {
     justify-content: space-between;
     align-items: center;
 }
-.mensaje{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
+
 .parrafo{
   display: flex;
   flex-direction: row;
@@ -63,6 +59,7 @@ em{
 .contenidoparrafo{
   font-size: 150%;
   text-align: center;
+  margin: 40px;
 
 }
 .imagencomoes{
@@ -70,4 +67,9 @@ em{
   height: 36%;
   display: flex;
   flex-direction: column;
+}
+
+.subtitulo{
+  font-size: 171%;
+
 }
