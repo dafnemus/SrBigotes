@@ -1,5 +1,6 @@
 body{
     background-color: mistyrose;
+    font-family: 'Caveat', cursive;
 }
 .tituloLogo{
     display: inline;
@@ -54,10 +55,10 @@ ul {
 }
 em{
   color: rgb(218, 57, 84);
-  font-size: 1.1em;
+  font-size: 1em;
 }
 .contenidoparrafo{
-  font-size: 150%;
+  font-size: 160%;
   text-align: center;
   margin: 40px;
 
