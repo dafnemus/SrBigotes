@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="stilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
     <div class="logoGeneral" id="home">
@@ -10,19 +11,71 @@
     </div>
  
     <div class="contenedornav">
-        <ul class="navbar"> <ul>
-            <li><a class="home" href="#home">Home</a></li>
-            <li><a href="#ComoEs">Qué es?</a></li>
-            <li><a href="#Cuidados">Cuidados</a></li>
-            <li><a href="#Adopción">Adopción</a></li>
+        <div class="navbar"> 
+            <ul class="stylenav">
+            <li class="subnav"><a class="home" href="#home">Home</a></li>
+            <li class="subnav"><a class="home" href="#ComoEs">Qué es?</a></li>
+            <li class="subnav"><a class="home" href="#Cuidados">Cuidados</a></li>
+            <li class="subnav"><a class="home" href="#Adopción">Adopción</a></li>
           </ul>
+          </div>
     </div>
-        <div class="imagenes">
-        <img class="imgfondo1" src="blackcat.jpg" alt="gatitofondo1">
-        <img class="imgfondo2" src="whitecat.jpg" alt="gatitofondo2">
-        <img class="imgfondo3" src="greycat.jpg" alt="gatitofondo3">
+          <div class="slideshow-container">
 
-    </div>
+            <div class="mySlides fade">
+              <img src="whitecat.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="blackcat.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="greycat.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+            
     <div id= ComoEs>
         <h2>Cómo es un gato?</h2>
         
