@@ -3,30 +3,85 @@
 <head>
     <link rel="stylesheet" type="text/css" href="stilos.css">
     <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="logoGeneral">
+    <div class="logoGeneral" id="home">
     <h1 class="tituloLogo">Sr. Bigotes</h1>
     <img class="logo" src="bigotes.png" alt="bigotes">
     </div>
  
-    <div>
-        <ul class="navbar"> <ul>
-            <li><a class="home" href="#home">Home</a></li>
-            <li><a href="#ComoEs">Qué es?</a></li>
-            <li><a href="#Cuidados">Cuidados</a></li>
-            <li><a href="#Adopción">Adopción</a></li>
+    <div class="contenedornav">
+        <div class="navbar"> 
+            <ul class="stylenav">
+            <li class="subnav"><a class="home" href="#home">Home</a></li>
+            <li class="subnav"><a class="home" href="#ComoEs">Qué es?</a></li>
+            <li class="subnav"><a class="home" href="#Cuidados">Cuidados</a></li>
+            <li class="subnav"><a class="home" href="#Adopción">Adopción</a></li>
           </ul>
+          </div>
     </div>
-    <div>
-        //carrousel de gatitos(2 fotos).
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="whitecat.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="blackcat.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="greycat.jpg" style="width:100%">
+            </div>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+        
         
     </div>
     <div class="contenedor" id= ComoEs>
         <div class="subtitulo">
         <h2>¿Cómo es un gato?</h2>
         </div>
-
 
         <div class="parrafo">
         <p class="contenidoparrafo">Si te interesan los gatos tal vez sepas <em>ALGO SOBRE EL AMOR</em>, sin saberlo. 
