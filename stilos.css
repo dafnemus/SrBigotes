@@ -1,5 +1,6 @@
 body{
     background-color: mistyrose;
+    font-family: 'Caveat', cursive;
 }
 .logoGeneral{
 display: flex;
@@ -63,6 +64,42 @@ margin: 0px;
   .imgfondo2{
     width: 59%;
   }
+  
+.contenedor{
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.parrafo{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+ 
+
+}
+em{
+  color: rgb(218, 57, 84);
+  font-size: 1em;
+}
+.contenidoparrafo{
+  font-size: 160%;
+  text-align: center;
+  margin: 40px;
+
+}
+.imagencomoes{
+  width: 30%;
+  height: 36%;
+  display: flex;
+  flex-direction: column;
+}
+
+.subtitulo{
+  font-size: 171%;
+}
   .imagenes{
     display: flex;
   }

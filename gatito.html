@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="stilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -37,68 +38,78 @@
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
-        
-        </div>
-        <br>
-        
-        <div style="text-align:center">
-          <span class="dot" onclick="currentSlide(1)"></span> 
-          <span class="dot" onclick="currentSlide(2)"></span> 
-          <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
-        
-        <script>
-        var slideIndex = 1;
-        showSlides(slideIndex);
-        
-        function plusSlides(n) {
-          showSlides(slideIndex += n);
-        }
-        
-        function currentSlide(n) {
-          showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
-        }
-        </script>
-            
-    <div id= ComoEs>
-        <h2>Cómo es un gato?</h2>
-        
-        <p>Si te interesan los gatos tal vez sepas ALGO SOBRE EL AMOR (sin saberlo).</p>
-        <p>CON UN GATO APRENDES qué nadie es dueño de nadie, qué todos tienen su tiempo, qué a quién quieres te puede lastimar, aprendes cuánto vale que te elijan y el trabajo que lleva conquistar.</p>
-        <p>LOS GATOS TE OBLIGAN a comprender, a aceptar el rechazo, a ejercitar la paciencia, a perdonar y a ceder.</p>
-        <p>DESCUBRES EL PLACER de someterte a un capricho, de sentirte una presa y de jugar al esclavo.</p>
-        <p>Si viviste con un gato quizas puedas resignar lo material, compartir tu espacio y percibir la diferencia entre el carácter y la apariencia.</p>
-        <p>UN GATO INOCULA soledades, esperas, silencios y ausencias.</p>
-        <p>Te hace querer QUE CONSIGAS QUE TE QUIERA.</p>
-        <p>EXIGE respeto, atención y distancia.</p>
-        <p>Tarde o tempreano te hace saber que con el amor NO ALCANZA.</p>
-        <p>TEN UN GATO Y SIENTE EL PODER.</p>
-        <img src="gatito.jpg" alt="gatito">
-
     </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+        
+        
+    </div>
+    <div class="contenedor" id= ComoEs>
+        <div class="subtitulo">
+        <h2>¿Cómo es un gato?</h2>
+        </div>
+
+        <div class="parrafo">
+        <p class="contenidoparrafo">Si te interesan los gatos tal vez sepas <em>ALGO SOBRE EL AMOR</em>, sin saberlo. 
+        <em>CON UN GATO APRENDES</em> qué nadie es dueño de nadie, qué todos tienen su tiempo, qué a quién quieres te puede lastimar, aprendes cuánto vale que te elijan y el trabajo que lleva conquistar.
+        <em> LOS GATOS TE OBLIGAN</em> a comprender, a aceptar el rechazo, a ejercitar la paciencia, a perdonar y a ceder.
+        <em> EL PLACER</em> de someterte a un capricho, de sentirte una presa y de jugar al esclavo.
+        Si viviste con un gato quizas puedas resignar lo material, compartir tu espacio y percibir la diferencia entre el carácter y la apariencia.
+        <em> UN GATO INOCULA</em> soledades, esperas, silencios y ausencias.
+        Te hace querer que <em>CONSIGAS QUE TE QUIERA</em>.
+        <em> TE EXIGE</em> respeto, atención y distancia.
+        Tarde o tempreano te hace saber que con el amor <em> NO ALCANZA</em>.    
+          <em> TEN UN GATO Y SIENTE EL PODER.</em></p>
+        <img class="imagencomoes" src="gatito.jpg" alt="gatito">
+        </div>
+    </div>
+
 <div id= Cuidados>
-<h2>Cuidados</h2>
+   <div class="subtitulo">
+     <h2>Cuidados</h2>
+   </div>
 //check
 
 </div>
 <div id= Adopción>
+    <div class="subtitulo">
     <h2>Adopción</h2>
+    </div>
+
     //carrousel + links.
 </div>
     
