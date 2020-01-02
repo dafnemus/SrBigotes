@@ -125,6 +125,9 @@ img {vertical-align: middle;}
 .puntos{
   font-size: 404%;
 }
+.adopcion{
+  margin-bottom: 100px;
+}
 /* Position the "next button" to the right */
 .next{
   right: 0;
