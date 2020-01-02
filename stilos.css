@@ -248,5 +248,14 @@ img {vertical-align: middle;}
   -ms-transform: translate(-50%, -50%);
   font-size: 35px;
  }
- 
+ .piedepagina{
+  background-color: rgb(218, 57, 84);
+  padding: 0px;
+  bottom: 0;
+  text-align-last: center;
+}
+.ultimaspalabras{
+  color: white;
+    margin: 0;
+}
  
