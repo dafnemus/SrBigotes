@@ -11,13 +11,13 @@ margin: 0px;
 .tituloLogo{
     display: flex;
     padding: inherit;
-    margin-left: 4px;
+    margin-left: 14px;
     margin-top: 0;
 }
 .logo{
   width: 12%;
   display: block;
-  margin-top: -50px;
+  margin-top: -72px;
   margin-left: 4px;
 }
 .contenedornav{
@@ -33,6 +33,7 @@ margin: 0px;
     overflow: hidden;
     background-color:rgb(218, 57, 84);
     color:rgb(218, 57, 84);
+    font-size: 22px;
   }
   .subnav {
     float: left;
@@ -107,7 +108,7 @@ em{
 img {vertical-align: middle;}
 
 .slideshow-container {
-  /* max-width: 1000px; */
+  max-width: 1100px; 
   position: relative;
   margin: auto;
 }
@@ -192,3 +193,48 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+.adopcionimgs{
+  display: flex;
+ }
+ .container {
+  position: relative;
+  width: 50%;
+  margin: 30px;
+ }
+  
+ .image {
+  display: block;
+  width: 100%;
+  height: auto;
+ }
+  
+ .overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:  rgb(218, 57, 84);
+  
+ }
+  
+ .container:hover .overlay {
+  opacity: 1;
+ }
+  
+ .text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  font-size: 35px;
+ }
+ 
+ 
