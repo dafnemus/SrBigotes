@@ -66,6 +66,39 @@ margin: 0px;
     width: 59%;
   }
   
+.cuidado{
+  margin-left: 300px;
+  width: 800px;
+display: flex;
+align-items: center;
+}
+
+.no {  
+  left:300px;
+  width: 500px;
+  height: 350px;
+  
+}
+.si {
+  width: 500px;
+  height: 350px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
 .contenedor{
   display: flex;
     flex-direction: column;
@@ -287,4 +320,5 @@ img {vertical-align: middle;}
     width: 240%;
   }
 }
+ 
  
