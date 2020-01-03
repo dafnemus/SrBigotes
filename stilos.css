@@ -95,7 +95,10 @@ h3{
   font-size: 210%;
 }
 .p{
-  font-size: 136%;
+  font-size: 160%;
+}
+li{
+  font-size: 130%;
 }
 #alimentacion{
   margin: 39px;
@@ -151,7 +154,7 @@ img {vertical-align: middle;}
   display: flex;
   flex-direction: row;
   justify-content: center;  
-  margin: 9%;
+  margin: 6%;
 }
 .silueta{
   width: 14%;
@@ -161,7 +164,7 @@ img {vertical-align: middle;}
   font-size: 404%;
 }
 .adopcion{
-  margin-bottom: 100px;
+  margin-bottom: -51px;
 }
 /* Position the "next button" to the right */
 .next{
