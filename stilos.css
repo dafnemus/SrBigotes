@@ -295,3 +295,23 @@ img {vertical-align: middle;}
     margin: 0;
 }
  
+.iconos {
+  width: 50px;
+}
+.espacio {
+  display: flex;
+  height: 50px;
+}
+
+.veterinario {
+  display: flex;
+  height: 50px;
+}
+.seguridad {
+  display: flex;
+  height: 50px;
+}
+.alimentacion {
+  display: flex;
+  height: 50px;
+}
