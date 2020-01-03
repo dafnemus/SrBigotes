@@ -327,3 +327,25 @@ img {vertical-align: middle;}
 }
  
  
+.iconos {
+  width: 50px;
+}
+.espacio {
+  display: flex;
+  height: 50px;
+}
+
+.veterinario {
+  display: flex;
+  padding:120.609 x 40px;
+  height: 40px;
+}
+.seguridad {
+  display: flex;
+  padding: 111.469 x 45;
+  height: 50px;
+}
+.alimentacion {
+  display: flex;
+  height: 50px;
+}
