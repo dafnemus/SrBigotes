@@ -261,4 +261,30 @@ img {vertical-align: middle;}
   color: white;
     margin: 0;
 }
+@media screen and (max-width: 600px) {
+  .logoGeneral{
+    flex-direction: row-reverse;
+  }
+  .logo{
+    margin-top: -13px;
+    width: 17%;
+    margin-right: -10px;
+  }
+  .navbar{
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    right: auto;
+  }
+  .parrafo{
+    flex-direction: column-reverse;
+  }
+  .stylenav{
+    display: flex;
+    flex-direction: column;
+  }
+  .image{
+    width: 240%;
+  }
+}
  
