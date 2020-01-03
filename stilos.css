@@ -74,14 +74,10 @@ align-items: center;
 }
 
 .no {  
-  left:300px;
-  width: 500px;
-  height: 350px;
-  
-}
-.si {
-  width: 500px;
-  height: 350px;
+  margin-left:109px;
+  width: 484px;
+  height: 250px;
+  margin-bottom: 40px;
 }
 
 table {
@@ -91,14 +87,20 @@ table {
 }
 
 td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
+  border: 1px solid rgb(218, 57, 84);
+  text-align: center;
   padding: 8px;
 }
-
-tr:nth-child(even) {
-  background-color: #dddddd;
+h3{
+  font-size: 210%;
 }
+.p{
+  font-size: 136%;
+}
+#alimentacion{
+  margin: 39px;
+}
+
 .contenedor{
   display: flex;
     flex-direction: column;
@@ -294,4 +296,31 @@ img {vertical-align: middle;}
   color: white;
     margin: 0;
 }
+@media screen and (max-width: 600px) {
+  .logoGeneral{
+    flex-direction: row-reverse;
+  }
+  .logo{
+    margin-top: -13px;
+    width: 17%;
+    margin-right: -10px;
+  }
+  .navbar{
+    flex-direction: column;
+    left: 0;
+    position: absolute;
+    right: auto;
+  }
+  .parrafo{
+    flex-direction: column-reverse;
+  }
+  .stylenav{
+    display: flex;
+    flex-direction: column;
+  }
+  .image{
+    width: 240%;
+  }
+}
+ 
  
