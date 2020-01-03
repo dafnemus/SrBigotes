@@ -2,20 +2,24 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="stilos.css">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-    <div class="logoGeneral">
+    <div class="logoGeneral" id="home">
     <h1 class="tituloLogo">Sr. Bigotes</h1>
     <img class="logo" src="bigotes.png" alt="bigotes">
     </div>
  
-    <div class="navbar">
-         <ul>
-            <li><a class="home" href="#home">Home</a></li>
-            <li><a href="#ComoEs">qué es?</a></li>
-            <li><a href="#Cuidados">Cuidados</a></li>
-            <li><a href="#Adopción">Adopción</a></li>
+    <div class="contenedornav">
+        <div class="navbar"> 
+            <ul class="stylenav">
+            <li class="subnav"><a class="home" href="#home">Home</a></li>
+            <li class="subnav"><a class="home" href="#ComoEs">Qué es?</a></li>
+            <li class="subnav"><a class="home" href="#Cuidados">Cuidados</a></li>
+            <li class="subnav"><a class="home" href="#Adopción">Adopción</a></li>
           </ul>
+          </div>
     </div>
     <div>
         //carrousel de gatitos(2 fotos).
@@ -110,9 +114,123 @@
      </div>
 
 <div id= Adopción>
-    <h2>Adopción</h2>
-    //carrousel + links.
-</div>
+          <div class="slideshow-container">
+
+            <div class="mySlides fade">
+              <img src="nathan-riley-_ir1D49PRqM-unsplash.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="blackcat.jpg" style="width:100%">
+            </div>
+            
+            <div class="mySlides fade">
+              <img src="greycat.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+              <img src="729768-PS0ATQ-646.jpg" style="width:100%">
+            </div>
+
+      
     
+    
+   
+    
+    <script>
+   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+    </script>
+     </div>
+
+
+    <div class="contenedor" id= ComoEs>
+        <div class="subtitulo">
+        <h2>¿Cómo es un gato?</h2>
+        </div>
+
+        <div class="parrafo">
+        <p class="contenidoparrafo">Si te interesan los gatos tal vez sepas <em>ALGO SOBRE EL AMOR</em>, sin saberlo. 
+        <em>CON UN GATO APRENDES</em> qué nadie es dueño de nadie, qué todos tienen su tiempo, qué a quién quieres te puede lastimar, aprendes cuánto vale que te elijan y el trabajo que lleva conquistar.
+        <em> LOS GATOS TE OBLIGAN</em> a comprender, a aceptar el rechazo, a ejercitar la paciencia, a perdonar y a ceder.
+        <em> EL PLACER</em> de someterte a un capricho, de sentirte una presa y de jugar al esclavo.
+        Si viviste con un gato quizas puedas resignar lo material, compartir tu espacio y percibir la diferencia entre el carácter y la apariencia.
+        <em> UN GATO INOCULA</em> soledades, esperas, silencios y ausencias.
+        Te hace querer que <em>CONSIGAS QUE TE QUIERA</em>.
+        <em> TE EXIGE</em> respeto, atención y distancia.
+        Tarde o tempreano te hace saber que con el amor <em> NO ALCANZA</em>.    
+          <em> TEN UN GATO Y SIENTE EL PODER.</em></p>
+        <img class="imagencomoes" src="gatito.jpg" alt="gatito">
+        </div>
+    </div>
+    <div class="piedeseccion">
+    <p class="puntos">...............</p>
+    <img class="silueta" src="silueta.webp" alt="silueta">
+    <img class="silueta" src="silueta2.webp" alt="silueta">
+    <p class="puntos">...............</p>
+    </div>
+
+<div id= Cuidados>
+   <div class="subtitulo">
+     <h2>Cuidados</h2>
+   </div>
+//check
+
+</div>
+<div class="piedeseccion">
+  <p class="puntos">...............</p>
+  <img class="silueta" src="silueta.webp" alt="silueta">
+  <img class="silueta" src="silueta2.webp" alt="silueta">
+  <p class="puntos">...............</p>
+</div>
+
+<div class="contenedor adopcion" id= Adopción>
+    <div class="subtitulo">
+    <h2>Adopción</h2>
+    </div>
+    <div class="adopcionimgs">
+    <div class="container">
+      <img src="gatitosdelpenna.jpeg" alt="penna" class="image">
+      <div class="overlay">
+        <div class="text" onclick="location.href='https://www.facebook.com/GatitosdelPenna/?ref=ts'">Más Info</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="florenciovarela.jpeg" alt="varela" class="image">
+      <div class="overlay">
+        <div class="text" onclick="location.href='https://www.facebook.com/AdopcionesFelinasFlorencioVarela/'">Más Info</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="mamadera.png" alt="mamaderas" class="image">
+      <div class="overlay">
+        <div class="text" onclick="location.href='https://www.facebook.com/hogardegatitos/?pnref=lhc'">Más Info</div>
+      </div>
+    </div>
+    <div class="container">
+      <img src="gutierrez.jpeg" alt="gutierrez" class="image">
+      <div class="overlay">
+        <div class="text" onclick="location.href='https://www.facebook.com/gatitosdelgutierrezok/'">Más Info</div>
+      </div>
+      
+    </div>
+  </div>
+ </div>
+ 
+ <div class="piedepagina" >
+    <h2 class="ultimaspalabras">Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...Miau...</h2>
+</div>
+ 
 </body>
 </html>
