@@ -322,7 +322,14 @@ img {vertical-align: middle;}
     flex-direction: column;
   }
   .image{
-    width: 240%;
+    width: 253%;
+  }
+  #alimentacion{
+    width: -webkit-fill-available;
+  }
+  .no{
+    width: 0;
+    height: 0;
   }
 }
  
